@@ -14,13 +14,11 @@ What you need to understand is that “risk of a portfolio is not equal to avera
 One approach to optimizing a portfolio is application of the Monte Carlo Method. For unfamiliar readers, this is the idea of carrying out repeated trials using randomly generated inputs and observing the outcomes. A physical example of this would be flipping a coin 100 times and counting the number of heads and tails. Based on the results, the observer could estimate whether the coin is fair or not. In the digital world, computers can rapid generate random numbers extremely quickly, enabling observation of outcomes from complex scenarios that are based on the probabilities of certain events occurring. The code below illustrates how simple it is to implement a Monte Carlo simulation using Python:
 
 ## Sharpe Ratio
-The Sharpe ratio was developed by Nobel laureate William F. Sharpe and is used to help investors understand the return of an investment compared to its risk.1﻿﻿2﻿ The ratio is the average return earned in excess of the risk-free rate per unit of volatility or total risk. Volatility is a measure of the price fluctuations of an asset or portfolio.
+The Sharpe ratio was developed by Nobel laureate William F. Sharpe and is used to help investors understand the return of an investment compared to its risk. The ratio is the average return earned in excess of the risk-free rate per unit of volatility or total risk. Volatility is a measure of the price fluctuations of an asset or portfolio.
 
 Risk-adjusted return refines an investment’s return by measuring how much risk is involved in producing that return, which is generally expressed as a number or rating.
 
-## Markowitz’s Efficient Frontier 
+## Pre-Requisites
+pandas_datareader is used to extract the data from Yahoo Finance.
 
-Based on the insights from Figure 1, it is evident that a target return can be achieved with a wide range of risk levels. This introduces the concept of the “Efficient Frontier.” The Efficient Frontier is the set of portfolios that achieve a given return with the minimum amount of risk for that return. In Figure 1, these were the portfolios furthest to the left for each expected return.
-
-Keeping this concept in mind, a more structured approach can be applied to the selection of asset weights such that we consider only these efficient portfolios which meet a criteria important to the investor. First, she could optimize the weights to target a metric such as the Sharpe Ratio. Alternatively, the investor could opt to find the minimum volatility portfolio and accept the return that that provides. The code below consists of several helper functions that make use of SciPy’s optimization library to solve these two problems.
 
