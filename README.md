@@ -1,5 +1,5 @@
 # Portfolio Optimization using Monte Carlo Simulation
-The idea is the fundamental concept of diversification and essentially boils down to the idea that pooling risky assets together, such that the combined expected return is aligned with an investor’s target, will provide a lower risk-level than carrying just one or two assets by themselves. The technique is even more effective when the assets are not well correlated with one another.
+Diversification essentially boils down to the idea of pooling risky assets together, such that the combined expected return is aligned with an investor’s target, will provide a lower risk-level than carrying just one or two assets by themselves. Usually, the stocks with low correlation are used for risk-diversification in a portfolio.
 
 
 ## Modern Portfolio Theory
